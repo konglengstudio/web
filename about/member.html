@@ -18,22 +18,35 @@
     </style>
 </head>
 <body>
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>正在制作</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .under-construction {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+        .back {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
     <div class="under-construction">正在制作 Under Construction</div>
     <div class="back">
-        <span>返回上一页</span>
+        <span>返回关于我们</span>
         <span id="countdown">5</span>
     </div>
     <script>
-        var countdown = document.getElementById("countdown");
-        var timeLeft = 5;
-        var timer = setInterval(function() {
-            timeLeft--;
-            countdown.innerHTML = timeLeft;
-            if (timeLeft == 0) {
-                clearInterval(timer);
-                window.history.back();
-            }
-        }, 1000);
+        setTimeout(function() {
+            window.location.href = "https://www.kongleng.top/about";
+        }, 5000);
     </script>
 </body>
 </html>
